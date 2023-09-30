@@ -15,9 +15,9 @@
     </span>
   </header>
   <main>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off" id="formulario">
       <input type="text" name="nome" id="nome-usuario" placeholder="Nome Completo" required>
-      <input type="tel" name="telefone" id="telefone-usuario" placeholder="Telefone" pattern="\(\d{2}\)\d{4,5}-[0-9]{4}" required>
+      <input type="tel" name="telefone" id="telefone-usuario" placeholder="Telefone" pattern="\(\d{2}\) \d{4,5}-[0-9]{4}" required>
       <button type="submit">Cadastrar</button>
     </form>
     <table cellspacing="0">
@@ -28,18 +28,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Fulano</td>
-          <td>123456</td>
-        </tr>
       </tbody>
       <tfoot>
-        <tr>
-          <th>Total de Contatos</th>
-          <td><span class="total">18</span></td>
-        </tr>
       </tfoot>
     </table>
   </main>
+  <script src="programando.js"></script>
 </body>
 </html>
